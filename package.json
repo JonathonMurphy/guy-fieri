@@ -1,0 +1,21 @@
+{
+  "name": "guy-fieri",
+  "version": "1.0.0",
+  "description": "A Twtitter bot that tweets out Guy Fieri quotes",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "twitter"
+  ],
+  "author": "Jonathon Seth Murphy",
+  "license": "ISC",
+  "dependencies": {
+    "node-dir": "^0.1.17",
+    "node-file-parser": "^2.2.2"
+  }
+}
