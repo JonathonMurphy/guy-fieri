@@ -3,7 +3,8 @@ const fs = require('fs'),
       path = require('path'),
       dir = require('node-dir'),
       nfp = require('node-file-parser'),
-      regex = /\r?\n|\r|<i>|<\/i>/g,
+      regexTags = /\r?\n|\r|<i>|<\/i>/g,
+      regexWhiteSpace = /\s{2,}/g,
       regexFileExt = /srt$/,
       quoteObject = {
               quotes: []
@@ -17,8 +18,9 @@ for (i=0;i<files.length;i++) {
     let content = file.read().getContent();
     Object.keys(content).forEach(function (key) {
       let quote = content[key].content;
-      quote.replace(/\\n|\\r|<i>|<\/i>/gm, '');
-      quoteObject.quotes.push(quote.replace(regex, '').trim());
+      quote = quote.replace(regexTags, '');
+      quote = quote.replace(regexWhiteSpace, ' ');
+      quoteObject.quotes.push(quote.trim());
     });
   }
 }
