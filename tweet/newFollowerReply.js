@@ -2,7 +2,7 @@
 const path = require('path'),
       fs = require('fs');
 
-const newFollowerRepliesPath = path.resolve(__dirname, '../data/replies/newFollowerReplies.json'),
+const newFollowerRepliesPath = path.resolve(__dirname, '../data/replies/replies.json'),
       followerInfoPath = path.resolve(__dirname, '../followers/data/followerInfo.json'),
       postTweetPath = path.resolve(__dirname, '../lib/postTweet.js');
 
