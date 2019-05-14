@@ -2,6 +2,8 @@
 
 This is a Twitter bot that tweets quotes from various Guy Fieri shows.
 
+https://twitter.com/FieriBot
+
 ## Author
 
 * Jonathon Seth Murphy
