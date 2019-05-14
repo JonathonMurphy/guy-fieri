@@ -28,7 +28,7 @@ function followUser(screen_name, name) {
 
 //Gets current followers info and updates followersInfo.json if there is a new follower
 function getFollowerInfo() {
-  T.get('followers/list', { screen_name: 'Mbmbam_Quotes' },  function (err, data, response) {
+  T.get('followers/list', { screen_name: 'FieriBot' },  function (err, data, response) {
     if (err) {
       console.log('error:', err);
       // context.fail();

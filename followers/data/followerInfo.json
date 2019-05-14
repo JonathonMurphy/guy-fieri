@@ -1,0 +1,16 @@
+{
+  "note": "A user's following status may say 'false' if they were just followed when the script was run.",
+  "users": [{
+      "id": 30042733,
+      "name": "magical birb 👑💫",
+      "screen_name": "emmiewithacape",
+      "following": true
+    },
+    {
+      "id": 449404900,
+      "name": "Andrew Hill",
+      "screen_name": "andrewofthehill",
+      "following": true
+    }
+  ]
+}
